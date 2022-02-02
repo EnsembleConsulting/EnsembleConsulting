@@ -1,0 +1,7 @@
+{
+     "dependencies": {
+          "@material/textfield": "^13.0.0",
+          "browserify": "^17.0.0",
+          "moment-strftime": "^0.5.0"
+     }
+}

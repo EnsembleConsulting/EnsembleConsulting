@@ -1,0 +1,130 @@
+    /* You can add global styles to this file, and also import other style files */
+    
+    @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+    @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+    @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap');
+    /* Typography*/
+    /*  */
+    /* Validation */
+    
+     :root {
+        --grey: #808080;
+        --black: #191c1c;
+        --white: #fff;
+        --form-grey: #6769;
+        --form-text-color: #D0D1D3;
+        --bg-footer: #3e3d3d;
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        /*font-family: 'Source Code Pro', monospace;*/
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    h1 {
+        font-size: 40px !important;
+    }
+    
+    html,
+    body {
+        /*font-family: 'Source Code Pro', monospace;*/
+        /*font-family: 'Barlow Semi Condensed', sans-serif;*/
+        font-size: 24px;
+    }
+    /*body {*/
+    /*    margin: 0;*/
+    /*    font-family: Roboto, "Helvetica Neue", sans-serif;*/
+    /*}*/
+    
+    .CompanyName {
+        /*font-size: 54px;*/
+        color: #ff0000;
+        font-weight: 400;
+    }
+    /*    buttons */
+    
+    .btn-primary {
+        color: var(--black);
+        background-color: var(--white);
+        border: 1px solid var(--grey);
+        border-radius: 20px;
+    }
+    
+    .btn-primary:hover {
+        color: var(--white);
+        background-color: var(--grey);
+        border: 1px solid var(--black);
+    }
+    
+    .btn-check:focus+.btn-primary,
+    .btn-primary:focus {
+        color: #fff;
+        background-color: var(--black);
+        border: 1px solid var(--black);
+        box-shadow: 0 0 0 0.25rem var(--grey);
+    }
+    
+    .btn-check:active+.btn-primary,
+    .btn-check:checked+.btn-primary,
+    .btn-primary.active,
+    .btn-primary:active,
+    .show>.btn-primary.dropdown-toggle {
+        color: #fff;
+        background-color: var(--black);
+        border-color: var(--grey);
+    }
+    
+    .btn-check:active+.btn-primary:focus,
+    .btn-check:checked+.btn-primary:focus,
+    .btn-primary.active:focus,
+    .btn-primary:active:focus,
+    .show>.btn-primary.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.15rem var(--grey);
+    }
+    
+    .nav-item {
+        cursor: pointer;
+    }
+    /* forms*/
+    
+    .form-control:focus {
+        color: #212529;
+        background-color: #fff;
+        border-color: var(--grey);
+        outline: 0;
+        box-shadow: 0 0 0 0.015rem var(--grey);
+        border-radius: 0.25rem;
+    }
+    
+    .form-control {
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #ced4da;
+    }
+    /*modals*/
+    
+    .mdl-textfield--floating-label.is-focused .mdl-textfield__label,
+    .mdl-textfield--floating-label.is-dirty .mdl-textfield__label,
+    .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
+        color: black;
+        font-size: 18px;
+    }
+    
+    .mdl-textfield__label {
+        color: rgb(102, 102, 102);
+        font-size: 18px;
+    }

@@ -1,0 +1,260 @@
+                @use "@material/floating-label/mdc-floating-label";
+                @use "@material/line-ripple/mdc-line-ripple";
+                @use "@material/notched-outline/mdc-notched-outline";
+                @use "@material/textfield";
+                @include textfield.core-styles;
+                .container-1 {
+                    padding: 0 0 0 0;
+                    /*background-image: url(../assets/images/jellyfish.jpg);*/
+                    background-image: url('/Images/documentImages/ezgif.com-gif-maker.gif');
+                    background-position: center;
+                    /*width: 500px;*/
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    /* opacity: 60%; */
+                    max-width: 100%;
+                    height: 600px;
+                    margin-top: 40px;
+                }
+                
+                .container-3 {
+                    /*box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);*/
+                    padding: 10px
+                }
+                
+                .col-sm-6 {
+                    /*box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);*/
+                    border-radius: 5px;
+                    padding: 15px;
+                }
+                
+                .form-control {
+                    color: var(--form-text-color);
+                }
+                
+                .display-1 {
+                    padding-top: 15vh !important;
+                }
+                
+                .CompanyName {
+                    color: white;
+                }
+                
+                .container-2 {
+                    /* max-width: 80%; */
+                    padding: 35px;
+                }
+                
+                .container-2 p,
+                .m-3 p,
+                .m-3 ul {
+                    max-width: 80%;
+                    padding-bottom: 10px;
+                    padding-bottom: 20px;
+                    line-height: 30px;
+                    font-size: 18px;
+                }
+                
+                .container-1 {
+                    margin-top: 70px;
+                }
+                /* small devices (landscape phones, 576px and up)*/
+                
+                @media (max-width: 576px) {}
+                /* // Medium devices (tablets, 768px and up) */
+                
+                @media (min-width: 768px) {}
+                /* // Large devices (desktops, 992px and up) */
+                
+                @media (min-width: 992px) {}
+                /* // X-Large devices (large desktops, 1200px and up) */
+                
+                @media (min-width: 1200px) {}
+                /* // XX-Large devices (larger desktops, 1400px and up) */
+                
+                @media (min-width: 1400px) {
+                    .navbar {
+                        height: 60px;
+                    }
+                }
+                /* remove the original arrow */
+                
+                select {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -o-appearance: none;
+                }
+                
+                select::-ms-expand {
+                    display: none;
+                }
+                
+                select+i.bi-chevron-down {
+                    float: right;
+                    margin-top: -26px;
+                    margin-right: 10px;
+                    /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+                    pointer-events: none;
+                    /* everything after this is just to cover up the original arrow */
+                    /* (for browsers that don't support the syntax used above) */
+                    background-color: transparent;
+                    color: black!important;
+                    padding-right: 5px;
+                }
+                
+                select option {
+                    padding-right: 21px;
+                }
+                /*Animations for text*/
+                /*@import url('https://fonts.googleapis.com/css?family=Roboto:300');*/
+                /*body {*/
+                /*    text-align:center;*/
+                /*    background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);*/
+                /*    color:#555;*/
+                /*    font-family:'Roboto';*/
+                /*    font-weight:300;*/
+                /*    font-size:32px;*/
+                /*    padding-top:40vh;*/
+                /*    height:100vh;*/
+                /*    overflow:hidden;*/
+                /*    -webkit-backface-visibility: hidden;*/
+                /*    -webkit-perspective: 1000;*/
+                /*    -webkit-transform: translate3d(0,0,0);*/
+                /*}*/
+                
+                .Ensemble {
+                    font-weight: 600;
+                }
+                
+                .Consulting {
+                    font-weight: 100;
+                }
+                
+                .naming {
+                    display: inline-block;
+                    overflow: unset;
+                    white-space: nowrap;
+                }
+                
+                @media only screen and (max-width: 600px) {
+                    .naming {
+                        white-space: revert;
+                    }
+                    .CompanyName {
+                        font-size: 54px;
+                        width: min-content;
+                    }
+                    .naming:last-of-type span {
+                        margin-left: 0;
+                    }
+                    .naming:last-of-type span {
+                        margin-left: 0 !important;
+                        animation: 0 !important;
+                    }
+                }
+                
+                .naming:first-of-type {
+                    /* For increasing performance
+                       ID/Class should've been used.
+                       For a small demo
+                       it's okaish for now */
+                    animation: showup 7s infinite;
+                }
+                
+                .naming:last-of-type {
+                    width: 0px;
+                    animation: reveal 7s infinite;
+                }
+                
+                .naming:last-of-type span {
+                    margin-left: -355px;
+                    animation: slidein 7s infinite;
+                }
+                
+                @keyframes showup {
+                    0% {
+                        opacity: 0;
+                    }
+                    20% {
+                        opacity: 1;
+                    }
+                    80% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+                
+                @keyframes slidein {
+                    0% {
+                        margin-left: -800px;
+                    }
+                    20% {
+                        margin-left: -800px;
+                    }
+                    35% {
+                        margin-left: 0px;
+                    }
+                    100% {
+                        margin-left: 0;
+                    }
+                }
+                
+                @keyframes reveal {
+                    0% {
+                        opacity: 0;
+                        width: 0px;
+                    }
+                    20% {
+                        opacity: 1;
+                        width: 0px;
+                    }
+                    30% {
+                        width: 355px;
+                    }
+                    80% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                        width: 355px;
+                    }
+                }
+                
+                .CompanyName {
+                    background-color: black;
+                    opacity: 0.6;
+                }
+                
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-weight: 300;
+                }
+                
+                a:hover {
+                    color: grey;
+                    font-weight: 300;
+                }
+                
+                .border-line {
+                    border-top: 1px solid;
+                    /* width: 80%; */
+                    padding: 0 10% 0 10%;
+                }
+                
+                .who-we-are,
+                .data-solutions,
+                .Marketing {
+                    color: white;
+                    background-color: var(--black);
+                }
+                
+                img {
+                    width: -webkit-fill-available;
+                }
+                
+                .white-bg {
+                    box-shadow: -1px 0px 2px 1px rgb(0 0 0 / 20%);
+                }
